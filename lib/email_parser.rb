@@ -6,8 +6,11 @@
 class EmailAddressParser
    attr_accessor :emails,:csv_email
 
+def initialize(email_list)
+  @email_list = email_list
+end
+
    def self.parse(email_list)
      return email_list
- end
-end
+    end
 end
