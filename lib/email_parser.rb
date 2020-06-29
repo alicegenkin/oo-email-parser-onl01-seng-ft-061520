@@ -9,3 +9,5 @@ class EmailAddressParser
    def self.parse(email_list)
      return email_list
  end
+end
+end
