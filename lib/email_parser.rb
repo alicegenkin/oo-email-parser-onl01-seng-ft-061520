@@ -5,4 +5,7 @@
 
 class EmailAddressParser
    attr_accessor :emails,:csv_email
+
+   def self.parse(email_list)
+     return email_list
  end
