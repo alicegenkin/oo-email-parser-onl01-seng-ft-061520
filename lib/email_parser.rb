@@ -10,7 +10,7 @@ def initialize(email_list)
   @email_list = email_list
 end
 
-   def self.parse(email_list)
+   def parse
      return email_list
     end
 end
