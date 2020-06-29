@@ -4,14 +4,15 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-   attr_accessor :emails,:csv_email
+   attr_accessor :emails,:email_list
 
 def initialize(email_list)
   @email_list = email_list
 end
 
    def parse
-    email_list.split.collect do |address| address.split(",")
+    email_list.split.collect do |address| 
+      address.split(",")
     end
     .flatten.uniq
     end
